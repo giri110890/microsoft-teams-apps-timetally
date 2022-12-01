@@ -22,8 +22,8 @@ setlocal enabledelayedexpansion
 
 echo first time
 git --version
-git config --global url."https://github.com/".insteadOf git@github.com:
-git config --global url."https://".insteadOf git://
+git config --global url."git@github.com:".insteadOf https://github.com/
+git config --global url."git://".insteadOf https://
 
 SET ARTIFACTS=%~dp0%..\artifacts
 
@@ -71,8 +71,8 @@ SET MSBUILD_PATH=%ProgramFiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe
 
 echo Checking git controls
 git --version
-git config --global url."https://github.com/".insteadOf git@github.com:
-git config --global url."https://".insteadOf git://
+git config --global url."git@github.com:".insteadOf https://github.com/
+git config --global url."git://".insteadOf https://
 
 echo Handling ASP.NET Core Web Application deployment.
 
